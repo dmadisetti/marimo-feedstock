@@ -23,6 +23,12 @@ build:
     entry_points:
       - marimo = marimo._cli.cli:main
 
+app:
+  entry: marimo edit
+  icon: icon.png
+  summary: marimo {{ version }}
+  type: desk
+
 requirements:
   build:
     - if: build_platform != target_platform
